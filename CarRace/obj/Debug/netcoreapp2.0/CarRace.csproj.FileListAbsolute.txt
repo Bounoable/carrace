@@ -1,0 +1,10 @@
+/Users/Bono/Projects/CarRace/CarRace/bin/Debug/netcoreapp2.0/CarRace.deps.json
+/Users/Bono/Projects/CarRace/CarRace/bin/Debug/netcoreapp2.0/CarRace.runtimeconfig.json
+/Users/Bono/Projects/CarRace/CarRace/bin/Debug/netcoreapp2.0/CarRace.runtimeconfig.dev.json
+/Users/Bono/Projects/CarRace/CarRace/bin/Debug/netcoreapp2.0/CarRace.dll
+/Users/Bono/Projects/CarRace/CarRace/bin/Debug/netcoreapp2.0/CarRace.pdb
+/Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.csproj.CoreCompileInputs.cache
+/Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.AssemblyInfoInputs.cache
+/Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.AssemblyInfo.cs
+/Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.dll
+/Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.pdb
