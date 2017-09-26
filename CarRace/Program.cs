@@ -38,7 +38,7 @@ namespace CarRace
 
         public void Start()
         {
-            if (Engine.randomizer.Next(1, 5) == 1) return;
+            if (this.IsActive || Engine.randomizer.Next(1, 5) == 1) return;
 
             this.IsActive = true;
         }
@@ -142,7 +142,7 @@ namespace CarRace
                 this.GiveDriveCommand();
                 this.DrawRaceTrack();
                 this.CheckForFinish();
-                Thread.Sleep(50);
+                Thread.Sleep(150);
             }
         }
 
