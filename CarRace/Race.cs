@@ -164,7 +164,7 @@ namespace CarRace
             StringBuilder sb = new StringBuilder();
 
             sb.Append("Das Rennen ist beendet!\n")
-              .Append(this.Winners.Length == 1 ? "Der Sieger ist " : "Dies Sieger sind ");
+              .Append(this.Winners.Length == 1 ? "Der Sieger ist " : "Die Sieger sind ");
             
             string[] winners = new string[this.Winners.Length];
 
