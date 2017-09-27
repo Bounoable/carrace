@@ -53,10 +53,7 @@ namespace CarRace
             Console.WriteLine(sb.ToString());
 
             for (int i = Race.COUNTDOWN; i > 0; --i) {
-                sb = new StringBuilder();
-
-                sb.Append($"Das Rennen beginnt in {i}...");
-                Console.WriteLine(sb.ToString());
+                Console.WriteLine($"Das Rennen beginnt in {i}...");
                 Thread.Sleep(1000);
             }
         }
