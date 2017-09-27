@@ -21,7 +21,7 @@ namespace CarRace
             Vector2D currentPosition = this.Position;
             float distance = this.engine.CalculateDistance();
 
-            float newX = (currentPosition.X + distance);
+            float newX = currentPosition.X + distance;
             int newY = currentPosition.Y;
 
             while (newX > track.RoundLength - 1) {
