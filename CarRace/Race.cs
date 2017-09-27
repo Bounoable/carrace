@@ -98,10 +98,23 @@ namespace CarRace
                     continue;
                 }
 
-                sb.Append("- ");
+                sb.Append(this.GetPointView(position));
             }
 
             return sb.Append("\n").ToString();
+        }
+
+        protected string GetPointView(Vector2D position)
+        {
+            if (position.X == 0 && position.Y == 0) {
+                return "| ";
+            }
+
+            if (position.X == this.track.RoundLength - 1 && position.Y == this.track.Rounds - 1) {
+                return " |";
+            }
+
+            return "- ";
         }
 
         protected bool AnyCarIsAtPosition(Vector2D position)
@@ -145,7 +158,8 @@ namespace CarRace
 
         protected bool CarIsFinished(Car car)
         {
-            return car.Position.Y > this.track.Rounds - 1;
+            return (car.Position.Y > this.track.Rounds - 1)
+                || car.Position.X == this.track.RoundLength - 1 && car.Position.Y == this.track.Rounds -1;
         }
 
         protected void RevealWinners()
