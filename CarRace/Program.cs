@@ -48,7 +48,7 @@ namespace CarRace
                 Console.WriteLine($"Wie soll das {i + 1}. Auto heißen?");
                 string name = Console.ReadLine();
                 
-                Console.WriteLine("Welche Power hat das Auto?");
+                Console.WriteLine("Wie viel PS hat das Auto?");
 
                 int power = 0;
 

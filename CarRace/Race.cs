@@ -28,7 +28,7 @@ namespace CarRace
                 this.GiveDriveCommand();
                 this.DrawRaceTrack();
                 this.CheckForFinish();
-                Thread.Sleep(2);
+                Thread.Sleep(100);
             }
 
             this.RevealWinners();
