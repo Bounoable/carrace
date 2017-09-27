@@ -36,7 +36,7 @@ namespace CarRace
 
             int carCount = 0;
 
-            while (!Int32.TryParse(Console.ReadLine(), out carCount) || carCount == 0) {
+            while (!Int32.TryParse(Console.ReadLine(), out carCount) || carCount <= 1) {
                 Console.Clear();
                 Console.WriteLine("Ungültige Zahl. Nochmal!");
             }
@@ -45,7 +45,7 @@ namespace CarRace
 
             for (int i = 0; i < cars.Length; ++i) {
                 Console.Clear();
-                Console.WriteLine("Wie soll das " + (i + 1) + ". Auto heißen?");
+                Console.WriteLine($"Wie soll das {i + 1}. Auto heißen?");
                 string name = Console.ReadLine();
                 
                 Console.WriteLine("Welche Power hat das Auto?");
