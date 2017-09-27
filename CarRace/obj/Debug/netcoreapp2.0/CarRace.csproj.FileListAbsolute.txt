@@ -8,3 +8,4 @@
 /Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.AssemblyInfo.cs
 /Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.dll
 /Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.pdb
+/Users/Bono/Projects/CarRace/CarRace/obj/Debug/netcoreapp2.0/CarRace.csprojResolveAssemblyReference.cache
