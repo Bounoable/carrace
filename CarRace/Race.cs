@@ -156,7 +156,7 @@ namespace CarRace
         protected bool CarIsFinished(Car car)
         {
             return (car.Position.Y > this.track.Rounds - 1)
-                || (car.Position.X == this.track.RoundLength - 1 && car.Position.Y == this.track.Rounds -1);
+                || (car.Position.X == this.track.RoundLength - 1 && car.Position.Y == this.track.Rounds - 1);
         }
 
         protected void RevealWinners()
