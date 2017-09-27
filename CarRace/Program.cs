@@ -168,7 +168,6 @@ namespace CarRace
 
         protected RaceTrack track;
         protected Car[] cars;
-        protected bool isFinished = false;
 
         public Car[] Winners { get; protected set; } = new Car[0];
 
@@ -183,7 +182,7 @@ namespace CarRace
             this.Introduce();
             this.DrawRaceTrack();
 
-            while (!this.isFinished) {
+            while (!this.IsFinished()) {
                 this.GiveDriveCommand();
                 this.DrawRaceTrack();
                 this.CheckForFinish();
@@ -218,6 +217,11 @@ namespace CarRace
                 Console.WriteLine(sb.ToString());
                 Thread.Sleep(1000);
             }
+        }
+
+        protected bool IsFinished()
+        {
+            return this.Winners.Length > 0;
         }
 
         protected void GiveDriveCommand()
@@ -290,7 +294,6 @@ namespace CarRace
             if (cars.Length == 0) return;
 
             this.Winners = cars;
-            this.isFinished = true;
         }
 
         protected Car[] GetFinishedCars()
