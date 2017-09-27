@@ -111,7 +111,7 @@ namespace CarRace
             }
 
             if (position.X == this.track.RoundLength - 1 && position.Y == this.track.Rounds - 1) {
-                return " |";
+                return "|";
             }
 
             return "- ";
