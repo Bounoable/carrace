@@ -6,7 +6,7 @@ namespace CarRace
         public int Rounds { get; protected set; }
         public int RoundLength { get; protected set; }
 
-        public RaceTrack(string name = "Circuit City", int rounds = 10, int roundLength = 60)
+        public RaceTrack(string name = "Circuit City", int rounds = 10, int roundLength = 30)
         {
             this.Name = name;
             this.Rounds = rounds;
