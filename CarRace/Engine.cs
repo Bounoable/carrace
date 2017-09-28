@@ -9,11 +9,11 @@ namespace CarRace
         protected static Random randomizer = new Random();
 
         public bool IsActive { get; protected set; } = false;
-        public int Power { get; protected set; }
+        protected float power;
 
         public Engine(int power)
         {
-            this.Power = power;
+            this.power = power;
         }
 
         public void Start()
@@ -32,7 +32,7 @@ namespace CarRace
 
             float percentage = Engine.randomizer.Next(50, 101) / 100;
 
-            float distance = (this.Power / 100) * Engine.MULTIPLIER * percentage;
+            float distance = (this.power / 100) * Engine.MULTIPLIER * percentage;
 
             return distance > 1 ? distance : 1;
         }
