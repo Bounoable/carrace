@@ -25,7 +25,7 @@ namespace CarRace
             int newY = currentPosition.Y;
 
             while (newX > track.RoundLength - 1) {
-                newX = newX - track.RoundLength;
+                newX -= track.RoundLength;
                 newY++;
             }
 
