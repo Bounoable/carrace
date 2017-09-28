@@ -72,13 +72,13 @@ namespace CarRace
 
         protected void DrawRaceTrack()
         {
-            Console.Clear();
             StringBuilder sb = new StringBuilder();
 
             for (int y = 0; y < this.track.Rounds; ++y) {
                 sb.Append(this.GetRoundView(y + 1));
             }
 
+            Console.Clear();
             Console.WriteLine(sb.ToString());
         }
 
@@ -156,7 +156,7 @@ namespace CarRace
         protected bool CarIsFinished(Car car)
         {
             return (car.Position.Y > this.track.Rounds - 1)
-                || (car.Position.X == this.track.RoundLength - 1 && car.Position.Y == this.track.Rounds - 1);
+                || this.CarIsAtPosition(car, new Vector2D(this.track.RoundLength - 1, this.track.Rounds - 1));
         }
 
         protected void RevealWinners()
