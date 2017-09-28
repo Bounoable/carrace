@@ -9,7 +9,7 @@ namespace CarRace
         protected static Random randomizer = new Random();
 
         public bool IsActive { get; protected set; } = false;
-        protected float power;
+        protected int power;
 
         public Engine(int power)
         {
