@@ -172,7 +172,7 @@ namespace CarRace
                 winners[i] = this.Winners[i].Name;
             }
 
-            sb.Append(string.Join(" & ", winners));
+            sb.Append(string.Join(" & ", winners)).Append(".");
 
             Console.Clear();
             Console.WriteLine(sb.ToString());
